@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Dreamer</title>
+  <title>Dreamer&#39;s Blog</title>
   
-  
+  <subtitle>追梦者和做白日梦的人的区别之在于行动</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>York Lee</name>
     
   </author>
   
