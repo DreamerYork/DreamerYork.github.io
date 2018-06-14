@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-14T13:43:51.117Z</updated>
+  <updated>2018-06-14T14:40:58.388Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/06/14/%E5%BC%80%E5%8D%9A%E8%AE%B0/"/>
     <id>http://yoursite.com/2018/06/14/开博记/</id>
     <published>2018-06-14T13:37:36.000Z</published>
-    <updated>2018-06-14T13:43:51.117Z</updated>
+    <updated>2018-06-14T14:40:58.388Z</updated>
     
     <content type="html"><![CDATA[<p>作为一个嵌入式开发学习者，在学习过程中遇到问题时经常能在各种博客的文章里找到想要的答案。所以各位博主便成为了我心目中的大神，从那时起我心中就萌生了建立一个自己的博客的想法。随着浏览的博客量的增加，我越发觉得博客就是程序员标配，虽然我也算不上什么程序员，但我还是想试试。我不是什么技术大牛，也没什么经验可分享的，但我可以在这个博客上随便写点随笔，没然看也罢，就当是一个树洞，聊以解忧。也可以把以后学习时遇到的问题分享出来，大家共同解决。</p>]]></content>
     
@@ -34,6 +34,8 @@
     
     </summary>
     
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
     
   </entry>
   
