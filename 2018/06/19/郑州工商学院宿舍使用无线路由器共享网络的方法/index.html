@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="Dreamer&#39;s Blog">
 <meta property="og:description" content="前言转眼见大学四年就这么过去了，这四年间，为了室友的福祉，为了我们那个小窝里最大的慰藉——WiFi，我与学校的网络运营商也是相爱相杀，从最开始的iNode和电信到后来联通后来居上，第三方运营商也经历从冰川到深澜的变迁。破解网络共享限制一直是我不懈奋斗的目标。大一时我们宿舍只有一台电脑，当时的iNode检测力度也不是很严，使用笔记本热点便可以实现共享网络，我还发现使用代理可以绕过限速，大一刚来是胆子">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2018-06-19T05:49:37.105Z">
+<meta property="og:updated_time" content="2018-06-19T10:24:42.293Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="郑州工商学院宿舍使用无线路由器共享网络的方法">
 <meta name="twitter:description" content="前言转眼见大学四年就这么过去了，这四年间，为了室友的福祉，为了我们那个小窝里最大的慰藉——WiFi，我与学校的网络运营商也是相爱相杀，从最开始的iNode和电信到后来联通后来居上，第三方运营商也经历从冰川到深澜的变迁。破解网络共享限制一直是我不懈奋斗的目标。大一时我们宿舍只有一台电脑，当时的iNode检测力度也不是很严，使用笔记本热点便可以实现共享网络，我还发现使用代理可以绕过限速，大一刚来是胆子">
@@ -378,7 +378,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  708
+                  973
                 </span>
               
 
@@ -394,7 +394,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2
+                  3
                 </span>
               
             </div>
@@ -415,7 +415,9 @@
       
 
       
-        <p>前言<br>转眼见大学四年就这么过去了，这四年间，为了室友的福祉，为了我们那个小窝里最大的慰藉——WiFi，我与学校的网络运营商也是相爱相杀，从最开始的iNode和电信到后来联通后来居上，第三方运营商也经历从冰川到深澜的变迁。破解网络共享限制一直是我不懈奋斗的目标。大一时我们宿舍只有一台电脑，当时的iNode检测力度也不是很严，使用笔记本热点便可以实现共享网络，我还发现使用代理可以绕过限速，大一刚来是胆子比较小，听说在宿舍使用路由器会被通报批评，还要写检查，所以没敢尝试过。大二时联通力克电信，称霸校园网络，并且推出了全新的套路：绑定联通校园卡便可以提速，第三方运营商变成了冰川。冰川客户端会检测终端的网卡数量，笔记本开热点的方法已经不行了，这时我发现冰川客户端的拨号方式似乎并没有加密，使用路由器拨号成功连上！后来有时失败或掉掉线，使用客户端登录后再接上路由器，竟然也能骗过服务器（好像要克隆mac地址什么的），后来我又发现一个神器，冰川手机客户端，用它配合路由器登录帐号，依然爽歪歪！后来好像是到了大三下学期吧，学校为了全体同学的福祉（赚更多的钱），开始部署校园WiFi全覆盖，部署完成后第三方运营商变成了深澜，随之而来的是更多的套路，什么WiFi啊，提速啊，分了好多种套餐，绑定联通校园卡依然是王道，有一段时间甚至不绑卡都不给开户，经过广大同学的努力（工信部投诉），联通最终还是松了点嘴。当时我注意到深澜是没有认证客户端的，直接使用pppoe拨号便可以连接网络，这令我心中暗喜，结果用路由器登录之后发现深澜对WiFi共享的检测力度很大，手机连接后立马限制访问网络，而有共享线网络并不会被检查到，从此我便开始了最艰苦的破解大战，在网上查找各种案例，资料……中间有段时间发现使用代理可以躲避检测，但每月要额外支出节点费，不划算，后来经一位同学（亦是破解之路的战友）的启发，发现是UA（UserAgent）是关键所在，胜利之日可待了！</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>转眼见大学四年就这么过去了，这四年间，为了室友的福祉，为了我们那个小窝里最大的慰藉——WiFi，我与学校的网络运营商也是相爱相杀，从最开始的iNode和电信到后来联通后来居上，第三方运营商也经历从冰川到深澜的变迁。破解网络共享限制一直是我不懈奋斗的目标。大一时我们宿舍只有一台电脑，当时的iNode检测力度也不是很严，使用笔记本热点便可以实现共享网络，我还发现使用代理可以绕过限速，大一刚来是胆子比较小，听说在宿舍使用路由器会被通报批评，还要写检查，所以没敢尝试过。大二时联通力克电信，称霸校园网络，并且推出了全新的套路：绑定联通校园卡便可以提速，第三方运营商变成了冰川。冰川客户端会检测终端的网卡数量，笔记本开热点的方法已经不行了，这时我发现冰川客户端的拨号方式似乎并没有加密，使用路由器拨号成功连上！后来有时失败或掉掉线，使用客户端登录后再接上路由器，竟然也能骗过服务器（好像要克隆mac地址什么的，记不清了），后来我又发现一个神器，冰川手机客户端，用它配合路由器登录帐号，依然爽歪歪！后来好像是到了大三下学期吧，学校为了全体同学的福祉（赚更多的钱），开始部署校园WiFi全覆盖，部署完成后第三方运营商变成了深澜，随之而来的是更多的套路，什么WiFi啊，提速啊，分了好多种套餐，绑定联通校园卡依然是王道，有一段时间甚至不绑卡都不给开户，经过广大同学的努力（工信部投诉），联通最终还是松了点嘴。当时我注意到深澜是没有认证客户端的，直接使用pppoe拨号便可以连接网络，这令我心中暗喜，结果用路由器登录之后发现深澜对WiFi共享的检测力度很大，手机连接后立马限制访问网络，而有共享线网络并不会被检查到，从此我便开始了最艰苦的破解大战，在网上查找各种案例，资料……中间有段时间发现使用代理可以躲避检测，但每月要额外支出节点费，不划算，后来经一位同学（亦是破解之路的战友）的启发，发现是UA（UserAgent）是关键所在，胜利之日可待了！</p>
+<h1 id="开战！"><a href="#开战！" class="headerlink" title="开战！"></a>开战！</h1><h2 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h2><p>这期间我刚好上了斐讯的车，撸了一台K2，这是另外一个重要因素，因为我们需要一台开源的路由器，这里我们以斐讯为例，其实只要是MT7620A或同类别的处理器，rom 8M以上，能够刷OpenWrt固件的路由器都可以，这类路由器有极路由1s，小米路由器等，淘宝还有好多硬改的价格50到100不等，如果想上斐讯的车的话，这里我要提醒一句：投资有风险，上车需谨慎，特别是联壁金融这类P2P金融app，小心为好。</p>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><h3 id="刷固件"><a href="#刷固件" class="headerlink" title="刷固件"></a>刷固件</h3><p>我们仍以K2为例，首先刷入breed，breed是一个bootloader，类似与电脑的bios是底层驱动程序，刷入breed后就可以随便刷固件了。这里有两种刷如breed的方法，一是刷官改固件，仅支持官方固件版本22.5.11.5及之前的，具体方法<a href="http://www.right.com.cn/forum/forum.php?mod=viewthread&amp;tid=208753&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D13" target="_blank" rel="noopener">参考这里</a>，另一种方法是<a href="http://www.right.com.cn/forum/thread-325258-1-1.html" target="_blank" rel="noopener">手动刷入</a></p>
 
       
     </div>
@@ -508,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -603,6 +614,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开战！"><span class="nav-number">2.</span> <span class="nav-text">开战！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件"><span class="nav-number">2.1.</span> <span class="nav-text">硬件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件"><span class="nav-number">2.2.</span> <span class="nav-text">软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#刷固件"><span class="nav-number">2.2.1.</span> <span class="nav-text">刷固件</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -647,7 +674,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共937字</span>
+  <span class="post-count">博客全站共1.2k字</span>
 </div>
 
         
